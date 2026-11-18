@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Campus Connect: Students, Seniors & Alumni Network</title>
+  <meta name="description" content="Campus Connect helps students find verified seniors and alumni, discover internships, jobs, hackathons, learning resources and campus events.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Campus Connect">
+  <meta property="og:description" content="One trusted network for students, seniors and alumni.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg?v=2" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.setAttribute("data-theme","light");try{localStorage.setItem("cc:theme",JSON.stringify("light"))}catch(e){}</script>
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+  <script src="assets/js/components.js" defer></script>
+  <script src="assets/js/pages/home.js" defer></script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="app-header"></div>
+
+  <main id="main" tabindex="-1">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <span class="hero__pill"><span class="badge badge--primary">KIET-first concept</span> A student community, built around connection</span>
+          <h1>Connect with the people who've <span class="grad">walked your path.</span></h1>
+          <p class="hero__lead">Discover peers, connect with seniors and alumni, explore opportunities, and find events and learning resources in one focused campus workspace.</p>
+
+          <form class="hero__search" action="people.html" method="get" role="search">
+            <div class="input-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              <label for="hero-q" class="sr-only">Search people by name, skill or company</label>
+              <input id="hero-q" type="search" name="q" placeholder="Try “Machine Learning” or “Microsoft”" autocomplete="off">
+            </div>
+            <button class="btn btn--primary" type="submit">Search</button>
+          </form>
+
+          <div class="btn-row">
+            <a class="btn btn--primary btn--lg" href="people.html">Explore people</a>
+            <a class="btn btn--outline btn--lg" href="register.html">Create free account</a>
+          </div>
+
+          <div class="hero__trust mt-3">
+            <div class="avatar-stack" id="hero-avatars" aria-hidden="true"></div>
+            <span id="hero-trust-text">A student-built community concept for KIET</span>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true" id="hero-visual"></div>
+      </div>
+    </section>
+
+    <!-- Official institution -->
+    <section class="trusted" aria-labelledby="trusted-title">
+      <div class="container">
+        <div class="trusted__card">
+          <span class="trusted__label" id="trusted-title">Designed for the KIET community</span>
+          <img class="trusted__logo trusted__logo--light" src="assets/img/brand/kiet-logo.webp" alt="KIET Deemed to be University, Delhi-NCR, Ghaziabad" width="160" height="72" loading="eager">
+          <img class="trusted__logo trusted__logo--dark" src="assets/img/brand/kiet-logo-dark.webp" alt="" aria-hidden="true" width="160" height="67" loading="lazy">
+          <span class="trusted__divider" aria-hidden="true"></span>
+          <div class="trusted__meta">
+            <strong>KIET Deemed to be University</strong>
+            <span>Delhi-NCR, Ghaziabad · Independent student initiative</span>
+            <div class="badge-row"><span class="badge badge--muted">Student project</span><span class="badge badge--muted">Not an official KIET portal</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Campus workspace quick launch -->
+    <section class="workspace-section" aria-labelledby="workspace-title">
+      <div class="container">
+        <div class="workspace-heading">
+          <div><span class="eyebrow">Campus workspace</span><h2 id="workspace-title">Your next opportunity starts here.</h2><p>A focused starting point for discovering people, joining activities and building your next step.</p></div>
+          <span class="workspace-preview-label"><span></span> Interactive prototype</span>
+        </div>
+        <div class="workspace-shell">
+          <div class="workspace-main">
+            <div class="workspace-main__head"><div><span class="workspace-kicker">QUICK LAUNCH</span><h3>Explore your campus</h3></div><span class="workspace-shortcut">Press <kbd>⌘</kbd> <kbd>K</kbd> to search</span></div>
+            <div class="quick-launch-grid">
+              <a class="quick-launch" href="people.html"><span class="quick-launch__icon quick-launch__icon--navy"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span><strong>Discover people</strong><small>Find peers, seniors and alumni</small></span><span class="quick-launch__arrow">↗</span></a>
+              <a class="quick-launch" href="events.html"><span class="quick-launch__icon quick-launch__icon--orange"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span><span><strong>Events & hackathons</strong><small>Explore activities and competitions</small></span><span class="quick-launch__arrow">↗</span></a>
+              <a class="quick-launch" href="opportunities.html"><span class="quick-launch__icon quick-launch__icon--navy"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></span><span><strong>Career opportunities</strong><small>Browse internships and roles</small></span><span class="quick-launch__arrow">↗</span></a>
+              <a class="quick-launch" href="resources.html"><span class="quick-launch__icon quick-launch__icon--orange"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5V5a3 3 0 0 1 3-3h13v20H7a3 3 0 0 1-3-2.5Z"/><path d="M4 17h16"/></svg></span><span><strong>Learning library</strong><small>Explore notes and study resources</small></span><span class="quick-launch__arrow">↗</span></a>
+              <a class="quick-launch" href="my-profile.html"><span class="quick-launch__icon quick-launch__icon--navy"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><span><strong>Your profile</strong><small>Manage your student identity</small></span><span class="quick-launch__arrow">↗</span></a>
+              <a class="quick-launch" href="about.html"><span class="quick-launch__icon quick-launch__icon--orange"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7h.01"/></svg></span><span><strong>About the project</strong><small>Understand the platform and scope</small></span><span class="quick-launch__arrow">↗</span></a>
+            </div>
+          </div>
+          <aside class="workspace-side">
+            <div class="workspace-side__top"><span class="workspace-side__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z"/></svg></span><div><strong>Make your next move</strong><small>Three ways to get started</small></div></div>
+            <a class="workspace-step" href="register.html"><span>01</span><div><strong>Create your profile</strong><small>Introduce your skills and interests</small></div><b>→</b></a>
+            <a class="workspace-step" href="people.html"><span>02</span><div><strong>Build your network</strong><small>Discover people across batches</small></div><b>→</b></a>
+            <a class="workspace-step" href="events.html"><span>03</span><div><strong>Get involved</strong><small>Find events and team opportunities</small></div><b>→</b></a>
+            <div class="workspace-side__note"><strong>Prototype notice</strong><span>Sample records and browser-based demo interactions are shown. Real accounts and institutional integration are not active.</span></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prototype snapshot -->
+    <section class="section--tight prototype-snapshot">
+      <div class="container">
+        <div class="snapshot-heading"><div><span class="eyebrow">Prototype snapshot</span><h2>What you can explore right now</h2></div><p>Counts below reflect bundled sample records only — not live campus usage.</p></div>
+        <div class="stats" id="stats">
+          <div class="stat"><strong data-stat="profiles">–</strong><span>Sample profiles</span></div>
+          <div class="stat"><strong data-stat="verified">–</strong><span>Demo verified profiles</span></div>
+          <div class="stat"><strong data-stat="opportunities">–</strong><span>Sample opportunities</span></div>
+          <div class="stat"><strong data-stat="events">–</strong><span>Sample events</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="eyebrow">Everything in one place</span>
+            <h2>Built for how students actually grow</h2>
+            <p>Skip the random WhatsApp groups. Campus Connect brings your college network into one searchable platform.</p>
+          </div>
+        </div>
+        <div class="grid grid--4">
+          <a class="card feature reveal" href="people.html">
+            <span class="feature__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+            <h3>People Directory</h3>
+            <p>Search students, seniors and alumni by department, batch, skill and verification status.</p>
+            <span class="more">Explore people →</span>
+          </a>
+          <a class="card feature reveal" href="opportunities.html">
+            <span class="feature__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+            <h3>Opportunities</h3>
+            <p>Internships, jobs, hackathons and certifications shared by alumni who work there.</p>
+            <span class="more">Browse opportunities →</span>
+          </a>
+          <a class="card feature reveal" href="resources.html">
+            <span class="feature__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg></span>
+            <h3>Resource Library</h3>
+            <p>Notes, previous-year papers, roadmaps and courses curated by seniors.</p>
+            <span class="more">Open library →</span>
+          </a>
+          <a class="card feature reveal" href="events.html">
+            <span class="feature__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+            <h3>Campus Events</h3>
+            <p>Workshops, webinars, hackathons and alumni meetups. Register in one tap.</p>
+            <span class="more">See events →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="eyebrow">How it works</span>
+            <h2>Three steps to your campus network</h2>
+          </div>
+          <a class="btn btn--outline" href="register.html">Get started</a>
+        </div>
+        <div class="steps">
+          <div class="step reveal"><h3>Create your profile</h3><p>Sign up with your details: department, batch, skills and what you're looking for.</p></div>
+          <div class="step reveal"><h3>Get verified</h3><p>Verify with your college email or ID card so others know you're genuinely from campus.</p></div>
+          <div class="step reveal"><h3>Connect & grow</h3><p>Reach out to seniors and alumni, request calls, apply to opportunities and join events.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured people -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="eyebrow">Sample profile preview</span>
+            <h2>Explore sample mentor profiles</h2>
+            <p>Illustrative profile examples showing how peer guidance and mentorship could work.</p>
+          </div>
+          <a class="btn btn--ghost" href="people.html?verification=verified">View all →</a>
+        </div>
+        <div class="grid grid--4" id="featured-people" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Opportunities -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="eyebrow">Prototype listings</span>
+            <h2>Latest opportunities</h2>
+          </div>
+          <a class="btn btn--ghost" href="opportunities.html">All opportunities →</a>
+        </div>
+        <div class="grid grid--3" id="home-opps" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="eyebrow">Prototype listings</span>
+            <h2>Upcoming events</h2>
+          </div>
+          <a class="btn btn--ghost" href="events.html">All events →</a>
+        </div>
+        <div class="grid grid--3" id="home-events" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Student use cases -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__head"><div><span class="eyebrow">Designed around student goals</span><h2>Useful campus connections, with purpose.</h2><p>Explore practical ways the platform can support learning, collaboration and career discovery.</p></div></div>
+        <div class="grid grid--3 use-case-grid">
+          <article class="card use-case-card"><span class="use-case-card__number">01 / CONNECT</span><h3>Find the right people</h3><p>Discover peers, seniors and alumni by skills, interests, department and career direction.</p><a class="more" href="people.html">Explore the directory →</a></article>
+          <article class="card use-case-card"><span class="use-case-card__number">02 / COLLABORATE</span><h3>Turn ideas into projects</h3><p>Find events, competitions and opportunities to build with other students.</p><a class="more" href="events.html">Explore campus events →</a></article>
+          <article class="card use-case-card"><span class="use-case-card__number">03 / GROW</span><h3>Build your next step</h3><p>Explore learning resources, internships and guidance that support your development.</p><a class="more" href="opportunities.html">Browse opportunities →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta reveal">
+          <div>
+            <h2>Your campus network is waiting.</h2>
+            <p>Create your profile in under two minutes, get verified, and start connecting with seniors and alumni today.</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn--white btn--lg" href="register.html">Create account</a>
+            <a class="btn btn--glass btn--lg" href="about.html">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="app-footer"></div>
+</body>
+</html>
